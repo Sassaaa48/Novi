@@ -34,6 +34,7 @@
   background: var(--lime-deep);
 }
 .cta h2 {
+  font-family: var(--serif);
   margin-top: 8px;
   font-size: clamp(1.6rem, 2.6vw, 2rem);
   font-weight: 500;
@@ -42,8 +43,8 @@
 }
 .cta-sub {
   margin-top: 8px;
-  font-family: var(--serif);
-  font-style: italic;
+  font-family: var(--sans);
+  font-style: normal;
   font-size: clamp(1.1rem, 1.6vw, 1.3rem);
   color: var(--ink-soft);
 }

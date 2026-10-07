@@ -20,6 +20,8 @@
 }
 .section-head h2 em {
   display: block;
+  font-family: var(--serif);
+  font-style: italic;
 }
 .section-head p {
   margin-top: 16px;
@@ -215,6 +217,10 @@
   color: inherit;
   letter-spacing: inherit;
   text-align: left;
+}
+.ftitle em {
+  font-family: var(--serif);
+  font-style: normal;
 }
 /* The title button covers the whole item, so the entire block is clickable. */
 .ftitle button::after {

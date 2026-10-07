@@ -12,9 +12,9 @@
   --lime-soft: #e5f7c6;
   --lime-ink: #3e5c0c;
   --night: #1b1b1a;
-  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --r-sm: 8px;
   --r-md: 14px;
   --r-lg: 28px;

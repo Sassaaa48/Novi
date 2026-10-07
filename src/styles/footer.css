@@ -4,7 +4,7 @@
   color: #f5f5f0;
   border-radius: 32px 32px 0 0;
   overflow: hidden;
-  padding-top: clamp(48px, 6vw, 64px);
+  padding-top: clamp(40px, 5vw, 56px);
 }
 .foot-grid {
   display: grid;
@@ -22,12 +22,6 @@
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.035em;
-}
-.foot-copy {
-  margin-top: auto;
-  padding-top: 32px;
-  font-size: 0.82rem;
-  color: rgba(245, 245, 240, 0.6);
 }
 .foot-links {
   display: grid;
@@ -150,13 +144,15 @@
 .wordmark {
   position: relative;
   z-index: 1;
-  margin: clamp(56px, 7vw, 88px) auto -0.09em;
-  width: max-content;
+  margin: clamp(28px, 4vw, 48px) auto -0.09em;
+  width: 100%;
+  text-align: center;
   font-weight: 600;
-  font-size: clamp(7rem, 24vw, 17.5rem);
-  line-height: 0.78;
+  font-size: clamp(7rem, 36vw, 28rem);
+  line-height: 0.72;
   letter-spacing: -0.065em;
   color: #f5f5f0;
+  opacity: 0.3;
   user-select: none;
   pointer-events: none;
 }
@@ -176,49 +172,6 @@
   transform: translateX(-56%);
   background: currentColor;
 }
-.foot-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 22px 0 28px;
-  border-top: 1px solid rgba(245, 245, 240, 0.16);
-  font-size: 0.82rem;
-  color: rgba(245, 245, 240, 0.6);
-}
-.foot-bottom-end {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.foot-bottom nav {
-  display: flex;
-  gap: 24px;
-}
-.foot-bottom a:hover {
-  color: #f5f5f0;
-}
-.to-top {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: rgba(245, 245, 240, 0.1);
-  color: #f5f5f0;
-  transition:
-    background 0.15s,
-    color 0.15s;
-}
-.to-top:hover {
-  background: var(--lime);
-  color: var(--ink) !important;
-}
-.to-top svg {
-  width: 16px;
-  height: 16px;
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 1020px) {
   .foot-grid {
@@ -240,13 +193,5 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-row: auto;
     row-gap: 32px;
-  }
-  .foot-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .foot-bottom-end {
-    width: 100%;
-    justify-content: space-between;
   }
 }
