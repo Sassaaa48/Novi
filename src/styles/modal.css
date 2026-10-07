@@ -1,0 +1,97 @@
+/* ---------- Modal ---------- */
+.modal {
+  border: 0;
+  border-radius: var(--r-lg);
+  padding: 0;
+  width: min(460px, 100% - 32px);
+  margin: auto;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 40px 80px -24px rgba(0, 0, 0, 0.35);
+}
+.modal::backdrop {
+  background: rgba(26, 26, 26, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.modal[open] {
+  animation: swap 0.25s ease both;
+}
+.modal h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  padding-right: 36px;
+}
+.modal p.sub {
+  margin: 0.7rem 0 1.4rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+.modal-close:hover {
+  background: var(--bg);
+}
+.modal-close svg {
+  width: 14px;
+  height: 14px;
+}
+.modal-body {
+  padding: clamp(24px, 4vw, 36px);
+}
+.modal .signup-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.modal .field {
+  display: flex;
+  gap: 6px;
+  padding: 5px;
+  border-radius: 999px;
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition: box-shadow 0.15s;
+}
+.modal .field:focus-within {
+  box-shadow: inset 0 0 0 1.5px var(--ink);
+}
+.modal .field.error {
+  box-shadow: inset 0 0 0 1.5px #d2453a;
+}
+.modal .field input {
+  flex: 1;
+  min-width: 0;
+  padding: 0 14px;
+  border: 0;
+  background: transparent;
+  font-size: 0.95rem;
+  outline: none;
+}
+.modal .field input::placeholder {
+  color: var(--ink-mute);
+}
+.modal .form-msg {
+  min-height: 1.4em;
+  padding-left: 6px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.modal .form-msg.err {
+  color: #b3261e;
+}
+.modal .form-msg.ok {
+  color: var(--lime-ink);
+}
